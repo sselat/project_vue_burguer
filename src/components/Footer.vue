@@ -22,8 +22,5 @@ export default {
   align-items: center;
   justify-content: center;
   width: 100%;
-
-  position: absolute;
-  bottom: 0;
 }
 </style>
