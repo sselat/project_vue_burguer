@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>Componente de Mensagem</p>
+        <Message/>
         <div>
             <form id="burger-form" @submit="createBurger">
                 <div class="input-container">
@@ -39,8 +39,12 @@
 </template>
 
 <script>
+import Message from './Message.vue'
 export default {
     name: 'BurgerForm',
+    components: {
+        Message
+    },
     data () {
         return {
             paes: null,
