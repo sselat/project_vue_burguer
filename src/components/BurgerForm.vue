@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Message/>
+        <Message :msg="msg" v-show="msg"/>
         <div>
             <form id="burger-form" @submit="createBurger">
                 <div class="input-container">
@@ -10,7 +10,7 @@
                 <div class="input-container">
                     <label for="pao">Escolha o pão:</label>
                     <select name="pao" id="pao" v-model="pao">
-                        <option value="">Selecione o seu pão</option>
+                        <option value="default">Selecione o seu pão</option>
                         <option v-for="pao in paes" :key='pao.id' :value="pao.tipo">{{pao.tipo}}</option>
                     </select>
                 </div>
@@ -87,7 +87,8 @@ export default {
             })
 
             const res = await req.json();
-
+            this.msg = `Pedido Nº ${res.id} realizado com sucesso!`
+            setTimeout(() => this.msg = '', 3000)
 
             this.nome = ''
             this.pao = ''
@@ -106,6 +107,7 @@ export default {
     #burger-form {
         max-width: 400px;
         margin: 0 auto;
+        padding-inline: 50px;
     }
 
     .input-container {

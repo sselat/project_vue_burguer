@@ -86,35 +86,27 @@
         "Cheddar",
         "Salame"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
     },
     {
-      "nome": "X-cavalo",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Cheddar",
-        "Salame",
-        "Bacon",
-        "Cebola roxa",
-        "Tomate",
-        "Pepino"
-      ],
-      "status": "Solicitado",
-      "id": 2
-    },
-    {
-      "nome": "Pedro",
+      "nome": "Ingrid",
       "carne": "Veggie burger",
       "pao": "Integral",
+      "opcionais": [],
+      "status": "Em produção",
+      "id": 3
+    },
+    {
+      "nome": "Tales",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
       "opcionais": [
-        "Tomate",
-        "Cebola roxa",
-        "Pepino"
+        "Bacon",
+        "Cheddar"
       ],
       "status": "Solicitado",
-      "id": 3
+      "id": 4
     }
   ]
 }
